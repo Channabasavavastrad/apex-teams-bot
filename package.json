@@ -1,0 +1,19 @@
+{
+  "name": "apex-teams-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "botbuilder": "^4.23.3",
+    "dotenv": "^17.4.2",
+    "node-fetch": "^3.3.2",
+    "restify": "^11.1.0"
+  }
+}
