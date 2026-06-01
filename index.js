@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const restify = require('restify');
-const fetch = require('node-fetch');
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 const {
     CloudAdapter,
     ConfigurationBotFrameworkAuthentication
