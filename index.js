@@ -24,9 +24,9 @@ const server = restify.createServer();
 server.use(restify.plugins.bodyParser());
 
 // Optional root route for health check
-server.get('/', async (req, res, next) => {
+
+server.get('/', async (req, res) => {
     res.send({ status: 'Bot is running' });
-    return next();
 });
 
 // Start server
